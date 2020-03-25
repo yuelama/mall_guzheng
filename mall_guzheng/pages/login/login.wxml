@@ -1,0 +1,4 @@
+<!-- mall_guzheng/pages/login/login.wxml
+<text>mall_guzheng/pages/login/login.wxml</text> -->
+
+<button  open-type="getUserInfo"  bindgetuserinfo="updateUserInfo">微信登录</button>

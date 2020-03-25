@@ -1,0 +1,80 @@
+
+<!--pages/user/order.wxml-->
+<view style='padding-top: 10rpx;' wx:for="{{orderdata}}">     
+	 <scroll-view scroll-y >
+    <view id='goodinfo' style='margigin-top:10rpx;'>  				
+      <view class='order-body' >
+        <view class='body-left'>
+          <image src="{{item.imgs}}" mode="aspectFill" style='width:110rpx; height:110rpx;'></image>
+        </view>
+				
+        <view class='body-right'>
+          <view class='right-head'>
+            {{course_name}}
+          </view>
+       
+          <view class='right-foot'>
+            <text class='red'>￥ {{course_price}} </text>
+          <!--  <text class='middleline'>￥ {{item.market_price}}</text>
+            <text class='right'>{{item.course_num}}</text> -->
+          </view>					
+        </view>		
+      </view>
+			
+	</view>	
+</scroll-view>
+	
+	<!-- 金额明细 -->
+	<view class="clear"></view>
+	<view class="yt-list" >
+		<view class="yt-list-cell b-b" >
+			<text class="cell-tit clamp">市场价格</text>
+			<text class="cell-tip">￥{{item.market_price}}</text>
+		</view>
+		
+		<view class="clear-cell"></view>
+		<view class="yt-list-cell b-b">
+			<text class="cell-tit clamp">现价</text>
+			<text class="cell-tip red">￥{{item.course_price}}</text>
+		</view>
+		
+<!-- 		<view class="clear-cell"></view>
+		<view class="yt-list-cell b-b">
+			<text class="cell-tit clamp">微信支付</text>
+			<view class="payicon">
+			<icon type="success" color="#c9c9c9" size="60rpx" class="post" />
+			</view>
+		</view> -->
+	
+		
+		<view class="clear-cell"></view>
+		<view class="yt-list-cell b-b">
+			<text class="cell-tit clamp">学习方式</text>
+			<text class="cell-tip red">一对一</text>
+		</view>
+		
+		<view class="clear-cell"></view>
+		<view class="yt-list-cell b-b">
+			<text class="cell-tit clamp">商户地址</text>
+			<text class="cell-tip red">杨公桥</text>
+		</view>
+		
+		<view class="clear-cell"></view>
+		<view class="yt-list-cell desc-cell">
+			<text class="cell-tit clamp">备注</text>
+			<input class="desc" type="text" v-model="desc" placeholder="请填写备注信息" placeholder-class="placeholder" />
+		</view>
+</view>
+	
+ <view id='foot'>
+	   <text class="cell-tit clamp">总价：￥{{item.course_price}}</text>
+    <view class='btns'>				 				
+			<button plain class='btn' size="mini" bindtap="payreturn" >再看看</button>
+		  <button plain class='btn' size="mini" wx:key="item.id" data-id="{{item.id}}" bindtap="payOrder">预约课程</button>
+    </view>
+		
+		
+		
+  </view>
+	
+</view>

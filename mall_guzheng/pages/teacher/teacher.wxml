@@ -1,0 +1,17 @@
+<view class="content">
+  <view class="con-teacher" wx:for="{{teacherdata}}" wx:key="item.id" data-teachid="{{item.id}}" 
+	 bindtap='Totechlist'>
+    <view class="con-tr">
+      <image src="{{item.imgs}}" class="con-trimg"></image>
+    </view>
+		
+		
+  <view class="con-info">
+      <view class="coin-name">{{item.tea_name}}</view>
+			<view class="con-info">{{item.intr_item}}</view>
+    </view> 
+		
+	
+	 
+  </view>
+</view>

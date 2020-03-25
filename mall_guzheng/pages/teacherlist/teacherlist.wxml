@@ -1,0 +1,25 @@
+<view class="content"  wx:for="{{tealistdata}}" wx:key="item.id">
+  <view class="top">
+    <view class="top-tr">
+     <image src="{{item.img}}" class="top-trimg"></image>
+    </view>
+    <view class="top-info">
+      <view class="toin-name">{{item.tea_name}}</view>
+      <view class="toin-info">擅长领域:{{item.intr_item}}</view>
+    </view>
+  </view>
+  
+<!--  <view class="info">
+    <view class="in-title">成长经历</view>
+    <view class="in-info">{{}}</view>
+  </view>
+  <view class="clear"></view> -->
+	
+	<view class="clear"></view>
+	<view class="info">
+	  <view class="in-title">详细介绍</view>
+	  <view class="in-info">{{item.tea_intr}}</view>
+	</view>
+	<view class="clear"></view>
+	
+</view>

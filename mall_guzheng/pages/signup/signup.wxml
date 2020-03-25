@@ -1,0 +1,105 @@
+<!-- <view class="appointment">
+  <view class="app-moduler">
+    <navigator url="url" class="mod-item">
+      <view class="mod-signup">
+        <image src="{{signupimg}}"></image>
+      </view>
+      <view class="mod-img">
+        <image src="{{imgsrc}}" class="mod-image"></image>
+      </view>
+      <view class="mod-title">
+         <text>标题标题标题标题标题</text>  
+      </view>
+      <view class="mod-info">
+        <view class="mod-icon">
+          <image src="{{iconsrc}}" class="icon"></image>
+        </view>
+        <view class="moinfont">17人已申请</view>
+      </view>
+    </navigator>
+    
+    <navigator url="url" class="mod-item">
+      <view class="mod-signup">
+        <image src="{{signupimg}}"></image>
+      </view>
+      <view class="mod-img">
+        <image src="{{imgsrc}}" class="mod-image"></image>
+      </view>
+      <view class="mod-title">
+         <text>标题标题标题标题标题</text>  
+      </view>
+      <view class="mod-info">
+        <view class="mod-icon">
+          <image src="{{iconsrc}}" class="icon"></image>
+        </view>
+        <view class="moinfont">17人已申请</view>
+      </view>
+    </navigator>
+
+    <navigator url="url" class="mod-item">
+      <view class="mod-signup">
+        <image src="{{signupimg}}"></image>
+      </view>
+      <view class="mod-img">
+        <image src="{{imgsrc}}" class="mod-image"></image>
+      </view>
+      <view class="mod-title">
+         <text>标题标题标题标题标题</text>  
+      </view>
+      <view class="mod-info">
+        <view class="mod-icon">
+          <image src="{{iconsrc}}" class="icon"></image>
+        </view>
+        <view class="moinfont">17人已申请</view>
+      </view>
+    </navigator>
+
+    <navigator url="url" class="mod-item">
+      <view class="mod-signup">
+        <image src="{{signupimg}}"></image>
+      </view>
+      <view class="mod-img">
+        <image src="{{imgsrc}}" class="mod-image"></image>
+      </view>
+      <view class="mod-title">
+         <text>标题标题标题标题标题</text>  
+      </view>
+      <view class="mod-info">
+        <view class="mod-icon">
+          <image src="{{iconsrc}}" class="icon"></image>
+        </view>
+        <view class="moinfont">17人已申请</view>
+      </view>
+    </navigator>
+   </view> 
+	 </view> -->
+<view class="content">	 
+<view class="clear"></view>
+	<view class="appointment"> 
+	 <view class="app-title">课程预约</view>
+	 <view class="app-moduler"  wx:for="{{imgcourses}}" wx:key="item.id" data-orderid="{{item.id}}"
+	 	class="mod-item" bindtap='Toorder'> 
+	       <view class="mod-signup">
+	         <image src="{{signupimg}}"></image>
+	       </view>
+	       <view class="mod-img">
+	         <image src="{{item.img}}" class="mod-image"></image>
+	       </view>		 
+	      <view class="mod-title">
+	          <text>{{item.course_name}}</text>  
+	       </view>			
+	 			 <view class="title">
+	 			   ￥{{item.course_price}} <text class="del" style="float: right;font-size: 22upx;">￥{{item.market_price}}</text>
+	 			</view>	
+				
+				<image src="{{iconsrc}}" class="icon"></image>
+				<text class="moinfont">预约人数{{item.course_num}}</text>
+				
+	   </view>
+	 
+	  	 </view>
+	 </view>
+	 
+	 
+	 
+

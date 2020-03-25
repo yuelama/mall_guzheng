@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "mall_guzheng/pages/index/index",
+		"mall_guzheng/pages/login/login",
+    "mall_guzheng/pages/signup/signup",
+    "mall_guzheng/pages/user/user",
+    "mall_guzheng/pages/action/action",
+    "mall_guzheng/pages/about/about",
+    "mall_guzheng/pages/teacher/teacher",
+    "we7/pages/index/index",
+    "we7/pages/newsDetail/newsDetail",
+    "we7/pages/user/index/index",
+    "mall_guzheng/pages/teacherlist/teacherlist",
+    "mall_guzheng/pages/actionlist/actionlist",
+		"mall_guzheng/pages/addr/addr",
+		"mall_guzheng/pages/edit_add/edit_add",
+   "mall_guzheng/pages/order/order",
+		"mall_guzheng/pages/pay/pay",
+		"mall_guzheng/pages/paysuccess/paysuccess",
+		 "mall_guzheng/pages/cart/cart",
+    "mall_guzheng/pages/coursedetail/coursedetail"
+  
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4ec4c8",
+    "navigationBarTitleText": "叶老师古筝工作室",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#888",
+    "selectedColor": "#4ec5c9",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "mall_guzheng/pages/index/index",
+        "text": "首页",
+        "iconPath": "mall_guzheng/image/home.png",
+        "selectedIconPath": "mall_guzheng/image/homeactive.png"
+      },
+      {
+        "pagePath": "mall_guzheng/pages/cart/cart",
+        "text": "我的收藏",
+        "iconPath": "mall_guzheng/image/bm.png",
+        "selectedIconPath": "mall_guzheng/image/bmactive.png"
+      },
+      {
+        "pagePath": "mall_guzheng/pages/user/user",
+        "text": "个人中心",
+        "iconPath": "mall_guzheng/image/temp/tab-my.png",
+        "selectedIconPath": "mall_guzheng/image/temp/tab-my-current.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}
